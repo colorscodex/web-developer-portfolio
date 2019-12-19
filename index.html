@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Webpage Works</title>
+    <meta name="author" content="Susana deOliveira">
+    <meta  name="description" content="Web DeveloperPortfolio">
+
+    <meta charset="UTF-8">
+
+    <!-- The viewport is the user's visible area of a web page. -->
+    <!-- The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.-->
+    <!-- A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="image/myLogo.ico" rel="icon" type="image/x-icon">
+
+    <!-- -CSS style -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="sections/about-author/css/style-about-author.css">
+    <link type="text/css" rel="stylesheet" href="sections/projects/css/style-grid.css">
+    <link type="text/css" rel="stylesheet" href="sections/projects/project-tile/css/style-project-tile.css">
+    <link type="text/css" rel="stylesheet" href="css/customFooter.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font family: Raleway-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <!-- An undered list with links to navigate to different sections of the page.-->
+      <ul class="navbar-list">
+        <li class="itemList"><a class="navbar-link" href="#about-author" target="_self">About</a></li>
+        <li class="itemList"><a class="navbar-link" href="#projects" target="_self">Projects</a></li>
+        <li class="itemList"><a class="navbar-link" href="#contact" target="_self">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Welcome -->
+    <section id="welcome-section">
+      <h1>Susana deOliveira</h1>
+      <p>Front-End web developer</p>
+    </section>
+
+    <!-- About author-->
+    <section id="about-author">
+      <h2>Short introduce</h2>
+      <div id="introduce">
+        <figure class="image-container">
+          <img id="img-author" src="image/author.jpg" alt="" title="">
+          <figcaption>At the entrance of the Apple Store.<br>North York (Ontario, Canada)</figcaption>
+        </figure>
+        <div class="list-container">
+          <!-- Description list <dl>, with terms <dt> and descriptions <dd>. -->
+          <dl>
+            <dt>Career:</dt>
+            <dd>Physicist with an Environment Master Degree; environmental projects for urban waste treatment plants.</dd>
+            <dt>Diet:</dt>
+            <dd>Based on plant foods, for more than seven years.</dd>
+            <dt>Hobby:</dt>
+            <dd>Project on food with Mediterranean Savour, exclusively based on vegetables and suitable for everyone!<i class="material-icons">mood</i></dd>
+            <dt>Sports:</dt>
+            <dd>Tibetan Yoga, Lu Jong.<br>Walk<dd>
+            <dt>Passion:</dt>
+            <dd>Codding.<br>And, what my passion becomes myCareer!</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature work -->
+    <section id="projects">
+      <h2>Feature work</h2>
+        <!-- Grid containers consist of grid items, placed inside columns and rows.-->
+      <div id="grid-container">
+        <div class="project-tile">
+          <figure class="technicalPage">
+            <img class="img-technicalPage" src="sections/projects/project-tile/image/for-pixel-art-maker-js.jpg" alt="Image of a piece of code in JavaScript" title="Code to make a grid with JavaScript, it was my first project: Pixel Art Maker">
+          </figure>
+          <div class="button">
+            <a class="projectLink" href="https://codepen.io/colorscodex/full/oNgLajo" target="_blank" rel="external">Technical Page</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <figure class="productLandingPage">
+            <img class="img-productLandingPage" src="sections/projects/project-tile/image/mediterranean-cuisine.jpg" alt="Photograph of a paella, a typical Spanish dish, made only with vegetable ingredients." title="Vegan Mediterranean cuisine: paella">
+          </figure>
+          <div class="button">
+            <a class="projectLink" href="https://codepen.io/colorscodex/full/LYEpKdR" target="_blank" rel="external">Product Landing Page</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <figure class="surveyForm">
+            <img class="img-surveyForm" src="sections/projects/project-tile/image/survey-form.jpg" alt="Photograph showing a thumbnail of the Survey Form page" title="Survey Form">
+          </figure>
+          <div class="button">
+            <a class="projectLink" href="https://codepen.io/colorscodex/full/mdydjdK" target="_blank" rel="external">Survey Form</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <figure class="tributePage">
+            <img class="img-tributePage" src="sections/projects/project-tile/image/tribute-page-nikola-tesla.jpg" alt="Photograph showing a thumbnail of the Tribute Page website: Nikola Tesla" title="Nikola Tesla in his laboratory">
+          </figure>
+          <div class="button">
+            <a  class="projectLink" href="https://codepen.io/colorscodex/full/ExaxpXX" target="_blank" rel="external">About Nikola Tesla</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <figure class="myFirstPortfolio">
+            <img class="img-myFirstPortfolio" src="sections/projects/project-tile/image/portfolio-cv-2018.jpg" alt="Photograph showing a thumbnail of apiece of the my first Portfolio created in March 2018" title="Portfolio, March 2018">
+          </figure>
+          <div class="button">
+            <a  class="projectLink" href="https://colorscodex.github.io/Portfolio-Site/portfolio-english.html" target="_blank" rel="external">My first Portfolio</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <figure class="pixelArtMaker">
+            <img class="img-pixelArtMaker" src="sections/projects/project-tile/image/pixel-art-maker.jpg" alt="Photograph showing a thumbnail of the Pixel Art Maker website" title="Pixel Art Maker">
+          </figure>
+          <div class="button">
+            <a class="projectLink" href="https://codepen.io/colorscodex/full/vpQqPp" target="_blank" rel="external">Pixel Art Maker</a>
+          </div>
+        </div>
+      </div>
+
+      <footer id="button-container">
+        <!-- The <i> and <span> elements are widely used for icons. ⎮ Font Awesome Brand Icons -->
+        <!-- icon-CodePen -->
+        <!--  A button ⎮ Font Awesome Icon -->
+        <div id="button-codePen">
+          <a class="link" href="https://codepen.io/dashboard?type=VIEW&opts_itemType=COLLECTION&opts_searchTerm=null&opts_order=RELEVANCE&opts_depth=EVERYTHING&opts_showForks=false&opts_filter=all&opts_orderBy=ID&opts_orderDirection=0&opts_tag=0&displayType=GRID&previewType=IFRAME&activeType=COLLECTION" target="_blank" rel="external"><i class="fa fa-codepen icon"></i>See more</a>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <header id="header-contactSection">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+      </header>
+      <div class="icon-container">
+        <!-- The <i> and <span> elements are widely used for icons. ⎮ Font Awesome Brand Icons -->
+        <!-- icon-freeCodeCamp.org -->
+        <div class="icon-button"><a class="iconLink" href="https://www.freecodecamp.org/colorscodex" target="_blank" rel="external"><i class="fa fa-free-code-camp  fa-1g"></i>freeCodeCamp</a></div>
+        <!-- icon-GitHub -->
+        <div class="icon-button"><a class="iconLink" href="https://github.com/colorscodex" target="_blank" rel="external"><i class="fa fa-github fa-1g"></i>GitHub</a></div>
+      </div>
+      <!-- Custom footer -->
+      <footer class="customFooter">
+        <p class="signature">Created by Susana deOliveira ⎮ Responsive Web Design ⎮ <time datetime="2019-12">December 2019</time></p>
+        <img class="img-customFooter" src="image/interlude.jpg" alt="Gothic Festival: The tavern" title="Photo-entitled: Interlude, September 2017./ Place: The Tavern in the Gothic Festival celebrated in Braga (North of Portugal)./ Author: Susana deOliveira">
+      </footer>
+    </section>
+  </body>
+</html>
