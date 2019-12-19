@@ -1,0 +1,517 @@
+/*
+* The CSS box-sizing property allows us to include the padding and border
+* in an element's total width and height. We use universal selector to apply
+* this rule to all elements.
+* And to choose font family.
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*  General specifications: */
+
+/*	1.-
+	A Flexible Layout must have a parent element with the display property set to flex.
+	Direct child elements(s) of the flexible container automatically becomes flexible items.
+	======================================================================================== */
+
+
+/*	2.-
+	align-items: center; aligns the flex items in the middle of the container.
+	========================================================================= */
+
+/* navbar is always at the top of the viewport */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: hsl(348, 83%, 35%); /* Crimson #dc143c ⎮ lighter/darker 40% ⎮ hex #bb1133 */
+  box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+  color: #f2f2f2; /* WhiteSmoke */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* unordered HTML LIST */
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 5vh;
+  overflow: hidden;
+}
+
+.itemList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  font-size: 25px;
+}
+
+/* navbar links inside itemList element, <li> */
+
+.navbar-link {
+  display: block;
+  color: #f2f2f2; /* WhiteSmoke */
+  text-decoration: none;
+}
+
+/* Add underline and increase font size to create movement on hover/ mouse-over */
+.navbar-link:hover {
+  color: #f2f2f2; /* WhiteSmoke */
+  font-weight: 500;
+  background-color: hsl(348, 83%, 35%); /* Crimson #dc143c ⎮ lighter/darker 40%  hex #bb1133 */
+  border-bottom: 3px solid #262626; /* underline ⎮ DarkGray #a9a9a9 ⎮lighter/darker 15% */
+}
+
+/* SECTIONS
+*  ======== */
+
+/* section: Welcome
+*  ================ */
+
+#welcome-section {
+  height: 100vh; /* Viewport = the browser window size. ⎮ 1vh: Relative to 1% of the width of the viewport */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #333333 linear-gradient(to right, #333333, #1a1a1a);
+  background-color: hsl(0, 0%, 20%); /* DarkGray #a9a9a9 ⎮light/darker 20% ⎮ hex #333333 */
+  color: hsl(0, 0%, 95%); /* DarkGray #a9a9a9 ⎮lighter/darker 95% ⎮ hex #f2f2f2 */
+  text-align: center;
+  align-items: center; /* Items are positioned at the center of the flexible container */
+  justify-content: center; /* aligns the flex items at the center of the container */
+}
+
+/* Title */
+#welcome-section h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+/* Description */
+#welcome-section p {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+/* section: About author
+*  ===================== */
+
+#about-author {
+  padding: 150px 0;
+  background-color: #2f4f4f; /* DarkSlateGray */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* section: Projects
+*  ================= */
+
+#projects {
+  width: 100%;
+  background-color: #8fbc8f; /* DarkSeaGreen */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Items are positioned at the center of the flexible container */
+  justify-content: center; /* aligns the flex items at the center of the container */
+  color: hsl(0, 0%, 95%); /* DarkGray #a9a9a9 ⎮lighter/darker 95% ⎮ hex #f2f2f2 */
+  padding: 150px 0;
+}
+
+/* Title: about-author section & projects section */
+#about-author h2,
+#projects h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 500;
+  color: #f2f2f2; /* WhiteSmoke */
+  border-bottom: 3px solid #f2f2f2;
+  text-align: center;
+}
+
+/* footer with button */
+
+#button-container {
+  width: 100%;
+  padding: 100px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-codePen {
+  width: 300px;
+  margin-right: 0;
+  background-color: hsl(348, 83%, 35%); /* Crimson #dc143c ⎮ lighter/darker 40% ⎮ hex #bb1133 */
+  box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+  border: 0;
+  outline: none;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#button-codePen:hover {
+  text-decoration: none;
+  background-color: #262626;
+  border-radius: 4px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 25px 30px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #dc143c;
+}
+
+/* section: Contact
+*  ================ */
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f2f2f2; /* WhiteSmoke */
+  background-color: #160b03; /* SaddleBrown #8b4513 ⎮lighter/darker 5% hsl(25, 76%, 5%) */
+}
+
+#header-contactSection {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+#header-contactSection h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+/* Description */
+#header-contactSection p {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* Main: buttons container */
+.icon-container {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content:center;
+  background-color: #160b03;
+}
+
+/* Font Awesome Brand Icons */
+.icon-button {
+  background-color: #160b03;
+  border: 0;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+.iconLink {
+  display: block;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+/* change color of the underline on hover/mouse/over */
+.iconLink:hover {
+  border-bottom: 1px solid red;
+}
+
+i {
+  padding-right: 10px;
+}
+
+/* Custom Footer of the  contact section */
+
+.customFooter {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  border-top: 4px solid  hsl(348, 83%, 35%);
+}
+
+.signature {
+  width: 85%;
+  color: #f2f2f2;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5vh;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.img-customFooter {
+  display: block;
+  width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5vh;
+  box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+/*  Add media queries to make the layout responsive.
+*   ================================================
+*   So that the website looks good on all devices
+*   (desktops, laptops, tablets and phones).
+*   ======================================== */
+
+@media screen and (min-width: 1101px) {
+
+  /* welcome section change font size */
+  #welcome-section h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 500;
+  }
+
+  #welcome-section p {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+
+  /* welcome section: change font size */
+  #welcome-section h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  #welcome-section p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+/* project section: change font-size and font-weight */
+
+  #projects h2 {
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+/* contact section */
+  #header-contactSection h1 {
+    font-size: 3em;
+  }
+
+  #header-contactSection p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  .icon-button {
+    font-size: 25px;
+    margin-right: 50px;
+  }
+
+/* Custom footer of the Contact section */
+  .signature {
+    width: 85%;
+    color: #f2f2f2;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5vh;
+    text-align: left;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  #navbar {
+    height: 70px;
+    justify-content: center;
+  }
+
+  .navbar-list {
+    padding-right: 0;
+  }
+
+  .itemList {
+    font-size: 18px;
+    width: 100px;
+    height: 75px;
+  }
+
+  /* welcome section: change font-size and font-weight */
+  #welcome-section h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  #welcome-section p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  #about-author {
+    padding: 100px 0 0 0;
+  }
+
+  /* project section: change font-size and font-weight */
+  #projects {
+    padding: 100px 0 0 0;
+  }
+
+  #about-author h2,
+  #projects h2 {
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  /* footer project section with button */
+  #button-container {
+    padding: 50px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #button-codePen {
+    font-size: 20px;
+  }
+
+  /* contact section */
+
+  #contact {
+    padding: 70px 0 0 0;
+  }
+
+  #header-contactSection {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header-contactSection h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  #header-contactSection p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  /* container with buttons ⎮ Font Awesome Brand Icons */
+  .icon-container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .icon-button {
+    background-color: #160b03;
+    border: none;
+    font-size: 20px;
+    margin-right: 0;
+    padding-top: 20px;
+  }
+
+  /* Custom Footer of the Contact section */
+  .customFooter {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid  hsl(348, 83%, 35%);
+  }
+
+  .signature {
+    width: 100%;
+    color: #f2f2f2;
+    padding: 20px 10px 10px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.5em;
+  }
+
+  .img-customFooter {
+    display: block;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+  }
+}
