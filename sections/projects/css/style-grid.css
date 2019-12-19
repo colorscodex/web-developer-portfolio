@@ -1,0 +1,67 @@
+/*
+* The CSS box-sizing property allows us to include the padding and border
+* in an element's total width and height. We use universal selector to apply
+* this rule to all elements.
+* And to choose font family.
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#grid-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 70px 70px 50px 70px;
+  display: grid;
+  grid-template-columns: auto auto auto; /* grid-template-columns property defines the number of columns in the grid layout. "auto": all cards have the same width.*/
+  grid-gap: 50px 50px; /* A shorthand property for the grid-column-gap and the grid-row-gap properties. */
+  justify-content: center; /* This gives the columns equal amount of space around them. */
+  align-content: center; /* To vertically align the whole grid inside the container. */
+  /*background-color: #246175;*/
+  /*background-color: #87CEEB; /* SkyBlue */
+  /*background-color: #4682b4;  /* SteelBlue */
+  background-color: #8fbc8f; /* DarkSeaGreen */
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1150px) {
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    padding: 75px 10px;
+    grid-gap: 75px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 100px 50px;
+    grid-column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0;
+    grid-gap: 50px 0;
+  }
+}
