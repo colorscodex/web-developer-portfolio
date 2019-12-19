@@ -1,0 +1,148 @@
+/*
+* The CSS box-sizing property allows us to include the padding and border
+* in an element's total width and height. We use universal selector to apply
+* this rule to all elements.
+* And to choose font family.
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.project-tile {
+  width: 300px;
+  height: auto;
+}
+
+/* Project: Technical Documentation Page*/
+.technicalPage {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2; /* WhiteSmoke */
+  padding: 0;
+}
+
+.img-technicalPage {
+  width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project: Product Landing Page */
+.productLandingPage {
+  margin: auto;
+  width: 300px;
+  background-color: #f2f2f2; /* WhiteSmoke */
+  padding: 25px 25px;
+}
+
+.img-productLandingPage {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project: Survey Form */
+.surveyForm {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #add8e6; /* LightBlue */
+  padding: 75px 25px;
+}
+
+.img-surveyForm {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Project: Tribute Page */
+.tributePage {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2; /* WhiteSmoke*/
+  padding: 0;
+}
+
+.img-tributePage {
+  width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project: My First Portfolio */
+.myFirstPortfolio {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2; /* WhiteSmoke*/
+  padding: 0;
+}
+
+.img-myFirstPortfolio {
+  width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project: Pixel Art Maker */
+.pixelArtMaker {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2; /* WhiteSmoke */
+  padding: 75px 25px 75px 25px;
+}
+
+.img-pixelArtMaker{
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Button with LINK */
+.button {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2f2f2;
+  background-color: #2f4f4f; /* DarkSlateGray */
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projectLink {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  outline: none;
+  padding: 30px 0;
+}
+
+.projectLink:hover {
+  color: #f2f2f2;
+  background-color: #262626;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #dc143c; /* Crimson */
+}
