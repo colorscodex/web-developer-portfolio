@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #2f4f4f;  /* DarkSlateGray */
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .image-container {
@@ -67,7 +67,7 @@ dl {
 dt {
   margin-top: 15px;
   text-decoration:underline;
-  text-decoration-color: #d2691c;
+  text-decoration-color: #d2691c; /* Chocolate */
   text-decoration-style: double;
 }
 
@@ -86,7 +86,7 @@ dt {
  @media screen and (min-width: 801px) and (max-width: 1120px) {
 
    #introduce {
-     padding-top: 50px;
+     padding: 50px 0;
    }
 
    .list-container {
