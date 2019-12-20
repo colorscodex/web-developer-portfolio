@@ -134,6 +134,16 @@ body {
   justify-content: center;
 }
 
+/* Title: about-author section */
+#about-author h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 500;
+  color: #f2f2f2; /* WhiteSmoke */
+  border-bottom: 3px solid #d2691c;
+  text-align: center;
+}
+
 /* section: Projects
 *  ================= */
 
@@ -148,14 +158,14 @@ body {
   padding: 150px 0;
 }
 
-/* Title: about-author section & projects section */
-#about-author h2,
+/* Title: projects section */
+
 #projects h2 {
   margin: 0;
   font-size: 3em;
   font-weight: 500;
   color: #f2f2f2; /* WhiteSmoke */
-  border-bottom: 3px solid #f2f2f2;
+  border-bottom: 3px solid #262626;
   text-align: center;
 }
 
@@ -342,8 +352,9 @@ i {
   }
 
 /* project section: change font-size and font-weight */
-
-  #projects h2 {
+	
+	#about-author h2,
+	#projects h2 {
     margin: 0;
     padding-bottom: 0;
     font-size: 2.5em;
@@ -503,7 +514,7 @@ i {
     margin-bottom: 0;
     margin-left: 0;
     text-align: center;
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 
   .img-customFooter {
