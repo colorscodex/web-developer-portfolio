@@ -194,7 +194,8 @@ body {
 #button-codePen:hover {
   text-decoration: none;
   background-color: #262626;
-  border-radius: 4px;box-shadow:	
+  border-radius: 4px;
+	box-shadow:	none;
 }
 
 .link {
