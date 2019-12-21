@@ -16,6 +16,11 @@ body {
   padding: 0;
 }
 
+/* to add a smooth scrolling effect to the document: this property lets smoothly animate the scroll position, instead nstead of a straight jump, when the user clicks on a link within a scrollable box.*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*  General specifications: */
 
 /*	1.-
