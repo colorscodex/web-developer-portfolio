@@ -22,7 +22,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #2f4f4f;  /* DarkSlateGray */
+  background-color: #191970;  /* MidnightBlue */
   padding: 100px 0;
 }
 
@@ -50,7 +50,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  background-color: #2f4f4f;  /*  DarkSlateGray */
+  background-color: #191970;  /* MidnightBlue */
   color: #f2f2f2;
   font-size: 20px;
   width: 50%;
