@@ -358,9 +358,9 @@ i {
   }
 
 /* project section: change font-size and font-weight */
-	#about-author h2,
-	#projects h2 {
-		margin: 0;
+  #about-author h2,
+  #projects h2 {
+    margin: 0;
     padding-bottom: 0;
     font-size: 2.5em;
     font-weight: 500;
